@@ -99,7 +99,7 @@ class Worker:
 
 if __name__ == '__main__':
   for i in range(0, threadnum):
-    w = Worker(i, 50,
+    w = Worker(i, 1000,
                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ij4-IEpFRkYgQkVaT1MgPDwiLCJpYXQiOjE1NzY4ODIyNDUsImV4cCI6MTU3Njk2ODY0NX0.vhuwmLUfUcVWcTQRAlc_11jGhEEqhePpPWmVt8rp0EQ")
     threads.append(Process(target=w.run,
                            args=()))
